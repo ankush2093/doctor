@@ -1,0 +1,319 @@
+/* ════════════════════════════════════════════════════════════════════════════════
+   REAL DIAGNOSTICS - GLOBAL STYLES
+   ════════════════════════════════════════════════════════════════════════════════ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+  --red: #f22e52;
+  --dark-red: #b5121f;
+  --navy: #1a1f4b;
+  --white: #ffffff;
+  --off-white: #f8f9fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* ════════════════════════════════════════════════════════════════════════════════
+   TOP INFO BAR
+   ════════════════════════════════════════════════════════════════════════════════ */
+
+.top-bar {
+  color: var(--white);
+  padding: 14px 0 12px;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.top-bar .container {
+  max-width: 1640px;
+}
+
+.hero-overlay-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.top-bar-left {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--white);
+  text-decoration: none;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.top-bar-item:hover {
+  opacity: 0.85;
+}
+
+.top-bar-item i {
+  font-size: 0.9rem;
+}
+
+.top-bar-social {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.top-bar-social a {
+  color: var(--white);
+  font-size: 1.15rem;
+  transition: opacity 0.2s;
+  text-decoration: none;
+}
+
+.top-bar-social a:hover {
+  opacity: 0.8;
+}
+
+/* ════════════════════════════════════════════════════════════════════════════════
+   NAVBAR
+   ════════════════════════════════════════════════════════════════════════════════ */
+
+.navbar-custom {
+  background: var(--white);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  position: absolute;
+  top: 68px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 699;
+  border-radius: 18px;
+}
+
+.hero-overlay-navbar {
+  position: absolute;
+  top: 55px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--red) !important;
+  text-decoration: none;
+  flex-shrink: 0;
+  margin-right: 1.5rem !important;
+}
+
+.navbar-brand:hover {
+  opacity: 0.9;
+}
+
+.brand-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.brand-sub {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #555;
+  display: block;
+  line-height: 1;
+  margin-top: -2px;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: #222 !important;
+  padding: 0.6rem 1rem !important;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--red) !important;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background: var(--red);
+  border-radius: 2px;
+}
+
+.btn-book-nav {
+  background: var(--red);
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 30px;
+  padding: 4px 28px;
+  transition:
+    background 0.2s,
+    transform 0.15s;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-book-nav:hover {
+  background: var(--dark-red);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  box-shadow: none !important;
+  flex-shrink: 0;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #606161;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.search-icon:hover {
+  color: var(--red);
+}
+
+/* ════════════════════════════════════════════════════════════════════════════════
+   HERO SECTION
+   ════════════════════════════════════════════════════════════════════════════════ */
+
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #1a0a0a;
+}
+
+/* Hero Background Container (holds overlay & image) */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    linear-gradient(
+      110deg,
+      #f22e52 0%,
+      #cc1739 34%,
+      rgba(118, 12, 90, 0.7) 68%,
+      rgba(40, 12, 62, 0.84) 100%
+    ),
+    url("/images/herobg.png");
+
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.hero-left-content {
+  z-index: 2;
+  color: #fff;
+}
+
+.hero-left-content {
+  padding: 10px;
+}
+.hero-top-sub-title {
+  font-size: 20px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.hero-btn-container {
+  display: flex;
+  gap: 20px;
+}
+.hero-btn-container {
+  margin-top: 25px;
+}
+.hero-btn-container a {
+  padding: 6px 28px;
+  border-radius: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.book-test {
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+.btn-download-report {
+  color: #fff;
+  background: #2d0c5d;
+  border: 2px solid #2d0c5d;
+}
+
+.section-padding {
+  padding: 40px 0px;
+}
