@@ -258,12 +258,18 @@ a {
   right: 0;
   bottom: 0;
   background:
+    radial-gradient(
+      circle at 20% 40%,
+      rgba(242, 46, 82, 0.95) 0%,
+      rgba(242, 46, 82, 0.8) 20%,
+      transparent 60%
+    ),
     linear-gradient(
       110deg,
-      #f22e52 0%,
-      #cc1739 34%,
-      rgba(118, 12, 90, 0.7) 68%,
-      rgba(40, 12, 62, 0.84) 100%
+      rgba(242, 46, 82, 0.9) 0%,
+      rgba(204, 23, 57, 0.85) 35%,
+      rgba(45, 12, 93, 0.85) 70%,
+      rgba(40, 12, 62, 0.95) 100%
     ),
     url("/images/herobg.png");
 
@@ -342,7 +348,7 @@ a {
 }
 
 .htm-sts-icon.green {
-  background: #4caf50;
+  background: #58be86;
 }
 
 .htm-sts-icon.red {
@@ -378,4 +384,120 @@ a {
   justify-content: center;
   color: #606161;
   font-weight: 900;
+}
+
+/* Laboratory  Card */
+
+/* Card */
+.liberoty-card {
+  background: #f9f9f9;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  transition: 0.4s;
+}
+
+/* Image */
+.liberoty-card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.liberoty-card-img img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  transition: 0.4s;
+  border-radius: 0px 0px 20px 20px;
+}
+
+/* Floating Icon */
+.liberoty-card-icon {
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 22px;
+  border: 1px solid #606161;
+}
+
+/* Body */
+.liberoty-card-body {
+  padding: 10px 20px 20px 20px;
+  position: relative;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.liberoty-card-body h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #606161;
+  font-size: 24px;
+}
+
+.liberoty-card-body p {
+  font-size: 12px;
+  color: #606161;
+}
+
+.liberoty-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.liberoty-tags span {
+  background: #eee;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.liberoty-btns {
+  display: flex;
+  gap: 10px;
+}
+.liberoty-btns a {
+  padding: 6px 18px;
+  border-radius: 25px;
+  font-size: 12px;
+}
+
+.liberoty-btn-outline {
+  border: 1px solid #606161;
+  color: #606161;
+  text-decoration: none;
+}
+
+.liberoty-btn-fill {
+  border: 1px solid #f22e52;
+  background: #f22e52;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* 🔥 HOVER EFFECT (2nd card style) */
+.liberoty-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.liberoty-card:hover .liberoty-btn-fill {
+  background: #2d0c5d;
+  border: 1px solid #2d0c5d;
+}
+
+.liberoty-card:hover .liberoty-btn-outline {
+  border-color: #f22e52;
+  color: #f22e52;
 }
