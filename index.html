@@ -55,7 +55,6 @@
                 <div class="brand-icon">
                     <img src="/images/logo.jpg" alt="logo">
                 </div>
-
             </a>
 
             <button class="navbar-toggler ms-auto me-2" type="button" data-bs-toggle="collapse"
@@ -763,6 +762,64 @@
         <iframe src="https://www.google.com/maps?q=Delhi&output=embed" loading="lazy">
         </iframe>
     </section>
+
+
+
+    <!-- Popup Section -->
+    <!-- Trigger Button -->
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupLoginModal">
+        Open Popup
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade popup-modal" id="popupLoginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content popup-content">
+
+                <!-- Modal Body -->
+                <div class="modal-body popup-body">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand mb-2" href="/">
+                        <div class="brand-icon">
+                            <img src="/images/logo.jpg" alt="logo">
+                        </div>
+                    </a>
+
+                    <h3 class="popup-title">Log in</h3>
+                    <p class="popup-subtitle">
+                        Enter your UHID or mobile number to access your reports
+                    </p>
+
+                    <!-- UHID -->
+                    <div class="popup-group">
+                        <label>UHID Number</label>
+                        <input type="text" placeholder="A000000">
+                    </div>
+
+                    <div class="popup-or">or</div>
+
+                    <!-- Mobile -->
+                    <div class="popup-group">
+                        <label>Mobile Number</label>
+                        <input type="text" placeholder="+91 0000000000">
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="popup-check">
+                        <input type="checkbox" id="agree">
+                        <label for="agree">
+                            By logging in, you agree to our Terms and Conditions and Privacy Policy
+                        </label>
+                    </div>
+
+                    <!-- Button -->
+                    <button class="popup-btn">Continue</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

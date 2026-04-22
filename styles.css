@@ -1098,6 +1098,88 @@ a {
   font-weight: 600;
 }
 
+/* Popup form styling */
+.popup-modal {
+  backdrop-filter: blur(6px);
+}
+
+.popup-content {
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.popup-body {
+  padding: 20px 30px;
+}
+
+.popup-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 32px;
+  color: var(--text-gray);
+}
+
+.popup-subtitle {
+  font-size: 14px;
+  color: var(--text-gray);
+  margin-bottom: 20px;
+}
+
+.popup-group {
+  margin-bottom: 20px;
+}
+
+.popup-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.popup-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--text-gray);
+  padding: 8px 0;
+  outline: none;
+}
+
+.popup-group input:focus {
+  border-color: #6c2bd9;
+}
+
+.popup-or {
+  text-align: start;
+  margin: 10px 0;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.popup-check {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.popup-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2d0c5d;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.popup-btn:hover {
+  background: #2c0553;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hm-footer-about {
