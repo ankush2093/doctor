@@ -790,6 +790,7 @@ a {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow: visible;
 }
 
 .hm-testimonial-quote {
@@ -808,9 +809,8 @@ a {
 }
 
 .hm-testimonial-text {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.6;
+  font-size: 12px;
+  color: var(--text-gray);
   margin-bottom: 20px;
 }
 
@@ -835,18 +835,30 @@ a {
 
 .hm-testimonial-user h5 {
   margin: 0;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e1e1e;
 }
 
 .hm-testimonial-user span {
-  font-size: 13px;
-  color: #999;
+  font-size: 14px;
+  color: var(--text-gray);
 }
 
 .hm-testimonial-stars {
-  color: #f4c150;
+  color: #f1cc36;
   font-size: 16px;
+}
+
+/* swapper css */
+.hm-testimonial-swiper {
+  padding: 30px 0px;
+}
+
+.hm-testimonial-wrapper {
+  max-width: 900px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /* Gallery Section */
@@ -1084,6 +1096,32 @@ a {
   color: #ccc;
   font-size: 14px;
   margin-bottom: 15px;
+}
+
+/* Common Hero Section */
+.common-hero-section {
+  background:
+    radial-gradient(
+      182.22% 656.34% at 31.11% 5.54%,
+      #f22e52 0%,
+      #cc1739 16.21%,
+      #2d0c5d 62.1%
+    ),
+    url("images/herobg.png");
+  background-blend-mode: multiply;
+
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
+  border-radius: 10px;
+}
+
+.common-hero-section h1 {
+  color: #fff;
+  font-size: 56px;
+  text-align: center;
+  font-weight: 600;
 }
 
 /* RESPONSIVE */
