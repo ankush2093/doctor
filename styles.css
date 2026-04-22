@@ -8,10 +8,16 @@
   --navy: #1a1f4b;
   --white: #ffffff;
   --off-white: #f8f9fa;
-  --linear-bg:
-    radial-gradient(circle at 20% 30%, #f22e52 0%, transparent 40%),
-    radial-gradient(circle at 80% 20%, #cc1739 0%, transparent 40%),
-    linear-gradient(135deg, #f22e52 0%, #cc1739 40%, #2d0c5d 100%);
+
+  --linear-bg: radial-gradient(
+      182.22% 656.34% at 31.11% 5.54%,
+      #f22e52 0%,
+      #cc1739 16.21%,
+      #2d0c5d 62.1%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-blend-mode: multiply;
+
   --text-gray: #606161;
 }
 
@@ -393,7 +399,7 @@ a {
 /* Section Title */
 /* WRAPPER */
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 /* SUBTITLE */
@@ -417,10 +423,9 @@ a {
 
 /* MAIN TITLE */
 .section-heading {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 600;
-  color: #555;
-  line-height: 1.3;
+  color: var(--text-gray);
 }
 
 /* HIGHLIGHT */
@@ -556,17 +561,6 @@ a {
   background: #f4f4f4;
 }
 
-.hm-why-choose-us-title h6 {
-  color: #e63946;
-  font-weight: 600;
-}
-
-.hm-why-choose-us-title h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
 .why-rating-box {
   display: flex;
   align-items: center;
@@ -663,16 +657,25 @@ a {
 
 .hm-why-choose-us-img-container img {
   width: 100%;
+  height: 565px;
   border-radius: 2px 20px;
+  object-fit: cover;
 }
 
 /* Badge */
 .hm-why-choose-us-badge {
   position: absolute;
   max-width: 155px;
-  top: 20px;
+  top: 80px;
   left: -65px;
-  background: linear-gradient(135deg, #f22e52, #cc1739db, #2d0c5de8);
+  background-blend-mode: multiply;
+  background: linear-gradient(
+    92.09deg,
+    #cc1739 -12.17%,
+    #f22e52 65.93%,
+    #2d0c5d 204.43%
+  );
+
   color: #fff;
   padding: 15px;
   border-radius: 5px 30px;
@@ -734,21 +737,6 @@ a {
   text-align: center;
 }
 
-/* TITLE */
-.hm-working-process-title h6 {
-  color: #e63946;
-  font-weight: 600;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
-}
-
-.hm-working-process-title h2 {
-  font-size: 38px;
-  font-weight: 700;
-  margin-bottom: 60px;
-  color: #333;
-}
-
 /* ROW spacing */
 .hm-working-process-row {
   align-items: stretch;
@@ -798,7 +786,7 @@ a {
 
 .hm-testimonial-card {
   position: relative;
-  padding: 80px 20px;
+  padding: 55px 20px 20px 20px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
@@ -806,13 +794,13 @@ a {
 
 .hm-testimonial-quote {
   position: absolute;
-  top: -20px;
+  top: -27px;
   left: 20px;
-  width: 45px;
-  height: 45px;
+  width: 53px;
+  height: 53px;
   background: #ff3b5c;
   color: #fff;
-  font-size: 28px;
+  font-size: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1020,7 +1008,14 @@ a {
 
 /* Footer Section */
 .hm-footer-sec {
-  background: linear-gradient(135deg, #2d0c5d, #3a0a63, #1c073d);
+  background: radial-gradient(
+    182.22% 656.34% at 31.11% 5.54%,
+    #2717a4 0%,
+    #291751 16.21%,
+    #2d0c5d 62.1%
+  );
+  background-blend-mode: multiply;
+
   color: #fff;
   padding: 40px 0;
 }
